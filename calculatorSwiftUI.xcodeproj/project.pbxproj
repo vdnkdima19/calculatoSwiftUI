@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D17CC5B72BF7E94D0039989A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CC5B62BF7E94D0039989A /* Extension.swift */; };
+		D17CC5B72BF7E94D0039989A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CC5B62BF7E94D0039989A /* Model.swift */; };
+		D185B6B52BF8A93E00FCC389 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D185B6B42BF8A93E00FCC389 /* Extension.swift */; };
+		D185B6B72BF8F7E900FCC389 /* HistoryOfOperationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D185B6B62BF8F7E900FCC389 /* HistoryOfOperationView.swift */; };
 		D190EEBC2BF7947800A7304C /* calculatorSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190EEBB2BF7947800A7304C /* calculatorSwiftUIApp.swift */; };
 		D190EEBE2BF7947800A7304C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D190EEBD2BF7947800A7304C /* ContentView.swift */; };
 		D190EEC02BF7947A00A7304C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D190EEBF2BF7947A00A7304C /* Assets.xcassets */; };
@@ -15,7 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D17CC5B62BF7E94D0039989A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D17CC5B62BF7E94D0039989A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D185B6B42BF8A93E00FCC389 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D185B6B62BF8F7E900FCC389 /* HistoryOfOperationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOfOperationView.swift; sourceTree = "<group>"; };
 		D190EEB82BF7947800A7304C /* calculatorSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculatorSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D190EEBB2BF7947800A7304C /* calculatorSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorSwiftUIApp.swift; sourceTree = "<group>"; };
 		D190EEBD2BF7947800A7304C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,9 +41,17 @@
 		D17CC5B52BF7E91D0039989A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D17CC5B62BF7E94D0039989A /* Extension.swift */,
+				D17CC5B62BF7E94D0039989A /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D185B6B32BF8A92200FCC389 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D185B6B42BF8A93E00FCC389 /* Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D190EEAF2BF7947800A7304C = {
@@ -63,7 +75,9 @@
 			children = (
 				D190EEBB2BF7947800A7304C /* calculatorSwiftUIApp.swift */,
 				D190EEBD2BF7947800A7304C /* ContentView.swift */,
+				D185B6B62BF8F7E900FCC389 /* HistoryOfOperationView.swift */,
 				D17CC5B52BF7E91D0039989A /* Model */,
+				D185B6B32BF8A92200FCC389 /* Extensions */,
 				D190EEBF2BF7947A00A7304C /* Assets.xcassets */,
 				D190EEC12BF7947A00A7304C /* Preview Content */,
 			);
@@ -148,9 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D17CC5B72BF7E94D0039989A /* Extension.swift in Sources */,
+				D17CC5B72BF7E94D0039989A /* Model.swift in Sources */,
 				D190EEBE2BF7947800A7304C /* ContentView.swift in Sources */,
 				D190EEBC2BF7947800A7304C /* calculatorSwiftUIApp.swift in Sources */,
+				D185B6B72BF8F7E900FCC389 /* HistoryOfOperationView.swift in Sources */,
+				D185B6B52BF8A93E00FCC389 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

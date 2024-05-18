@@ -1,5 +1,9 @@
 import SwiftUI
 
+enum Operation {
+    case addition, subtraction, multiplication, division, emptyState
+}
+
 enum Buttons: String {
     case zero = "0"
     case one = "1"
@@ -14,27 +18,25 @@ enum Buttons: String {
     case plus = "+"
     case minus = "-"
     case multiple = "x"
-    case devide = "/"
+    case divide = "/"
     case demical = ","
     case equel = "="
     case clear = "AC"
-    case empty = ""
+    case emptyFirst = ""
+    case emptySecond = " "
     
     var colorOfButtons : Color {
         switch self {
         case .clear:
-            return Color.LightGray
-        case .devide, .multiple ,.minus, .plus, .equel:
+            return Color.ColorOfClearButton
+        case .divide, .multiple ,.minus, .plus, .equel:
             return Color.orange
-        case .empty:
+        case .emptyFirst, .emptySecond:
             return Color.black
         default:
-            return Color.DarkGray
+            return Color.ColorOfNumbers
         }
     }
 }
-extension Color {
-    static let LightGray = Color("LightGray")
-    static let DarkGray = Color("DarkGray")
-}
+
 
