@@ -22,8 +22,6 @@ enum Buttons: String {
     case demical = ","
     case equel = "="
     case clear = "AC"
-    case emptyFirst = ""
-    case emptySecond = " "
     
     var colorOfButtons : Color {
         switch self {
@@ -31,8 +29,6 @@ enum Buttons: String {
             return Color.ColorOfClearButton
         case .divide, .multiple ,.minus, .plus, .equel:
             return Color.orange
-        case .emptyFirst, .emptySecond:
-            return Color.black
         default:
             return Color.ColorOfNumbers
         }

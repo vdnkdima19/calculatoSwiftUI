@@ -27,32 +27,17 @@ struct HistoryOfOperationView: View {
                     
                 }
             }
-        }
-        
-        // MARK: Navigation Title and Appearance
-        .navigationTitle("Історія операцій")
-                .onAppear {
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .black
-        appearance.titleTextAttributes = [
-                .foregroundColor: UIColor.white,
-                .font: UIFont.systemFont(ofSize: 24)
-        ]
-                    
-        let backImage = UIImage(systemName: "chevron.left")?.withTintColor(.white, renderingMode: .alwaysOriginal)
-        appearance.setBackIndicatorImage(backImage, transitionMaskImage: backImage)
-
-        appearance.backButtonAppearance.normal.titleTextAttributes = [
-                        .foregroundColor: UIColor.clear
-        ]
-                    
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        UINavigationBar.appearance().tintColor = .white
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Історія операцій")
+                        .font(.title2)
+                        .foregroundColor(.blue)
+                }
+            }
         }
     }
 }
+
 #Preview {
     HistoryOfOperationView(history: .constant([]))
 }
-
